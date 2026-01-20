@@ -562,9 +562,23 @@
           </ul>
         </div>
         <div class="subscribe-content">
-          <p class="title-subscribe-content">Subscribe</p>
-          <input class="subscribe-modal-input" type="email" name="user-email" />
-          <button class="subcribe-btn" type="submit"></button>
+          <label class="title-subscribe-content" for="user-email"
+            >Subscribe</label
+          >
+          <div class="subscribe-wrapper">
+            <input
+              class="subscribe-modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe<svg class="btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -597,7 +611,7 @@
           </div>
 
           <div class="modal-field">
-            <label class="modal-label" name="tel" for="user-tel">Phone</label>
+            <label class="modal-label" for="user-tel">Phone</label>
             <div class="modal-input-wrapper">
               <input
                 type="tel"
@@ -612,15 +626,13 @@
           </div>
 
           <div class="modal-field">
-            <label class="modal-label" name="email" for="user-email"
-              >Email</label
-            >
+            <label class="modal-label" for="type-email">Email</label>
             <div class="modal-input-wrapper">
               <input
                 type="email"
                 class="modal-input"
                 name="user-email"
-                id="user-email"
+                id="type-email"
               />
               <svg class="modal-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
@@ -629,9 +641,7 @@
           </div>
 
           <div class="modal-field">
-            <label class="modal-label" name="user-comment" for="user-comment"
-              >Comment</label
-            >
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-text-area"
               name="user-comment"
@@ -647,7 +657,7 @@
               value="accept"
               id="policy"
             />
-            <label class="modal-check-label" name="privacy-policy" for="policy">
+            <label class="modal-check-label" for="policy">
               <span class="fake-check">
                 <svg class="modal-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
