@@ -561,10 +561,15 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-content">
+          <p class="title-subscribe-content">Subscribe</p>
+          <input class="subscribe-modal-input" type="email" name="user-email" />
+          <button class="subcribe-btn" type="submit"></button>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <form class="modal-form">
           <button class="btn-close" type="button">
@@ -636,16 +641,24 @@
           </div>
           <div class="modal-field">
             <input
-              class="modal-check"
+              class="modal-check visually-hidden"
               type="checkbox"
               name="policy"
               value="accept"
               id="policy"
             />
-            <label class="modal-check-label" name="privacy-policy" for="policy"
-              ><span class="fake-check"></span>I accept the terms and conditions
-              of the <a href="" class="link-checkbox">Privacy Policy</a></label
-            >
+            <label class="modal-check-label" name="privacy-policy" for="policy">
+              <span class="fake-check">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the<a
+                href=""
+                class="link-checkbox"
+                >Privacy Policy</a
+              >
+            </label>
           </div>
           <button class="modal-btn-submit" type="submit">Send</button>
         </form>

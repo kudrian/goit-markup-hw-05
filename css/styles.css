@@ -451,7 +451,9 @@ input {
   color: #f4f4fd;
   max-width: 264px;
 }
-
+.footer-content-right {
+  margin-right: 80px;
+}
 .footer-social-media {
   font-weight: 500;
   font-size: 16px;
@@ -671,8 +673,19 @@ input {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition-property: background-color, border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-check:checked + .modal-check-label .fake-check {
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+  fill: #f4f4fd;
+}
 .link-checkbox {
   line-height: 1.33333;
   text-decoration: underline;
