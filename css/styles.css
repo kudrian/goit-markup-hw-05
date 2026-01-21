@@ -432,9 +432,10 @@ input {
   display: flex;
   justify-content: baseline;
   align-items: baseline;
-  gap: 120px;
 }
-
+.footer-content-left {
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -452,7 +453,7 @@ input {
   max-width: 264px;
 }
 .footer-content-right {
-  margin-right: auto;
+  margin-right: 80px;
 }
 .footer-social-media {
   font-weight: 500;
@@ -506,7 +507,6 @@ input {
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 24px;
   align-items: baseline;
   justify-content: flex-end;
 }
@@ -527,6 +527,7 @@ input {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 24px;
 }
 .subscribe-modal-input:hover,
 .subscribe-modal-input:focus {
@@ -689,6 +690,10 @@ input {
   width: 100%;
   height: 40px;
   background-color: transparent;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -732,6 +737,10 @@ input {
   padding: 8px 16px;
 
   margin-bottom: 16px;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text-area::placeholder {
@@ -740,6 +749,10 @@ input {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+.modal-text-area:hover,
+.modal-text-area:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-check-label {
